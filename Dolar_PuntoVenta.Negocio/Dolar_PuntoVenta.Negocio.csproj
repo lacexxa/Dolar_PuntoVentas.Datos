@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="N_Punto_Venta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -48,9 +49,9 @@
       <Project>{ca8f32ae-2305-4841-93e1-2fa258ed3200}</Project>
       <Name>Dolar_PuntoVenta.Entidades</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Dolar_PuntoVentas.Datos\Dolar_PuntoVentas.Datos.csproj">
+    <ProjectReference Include="..\Dolar_PuntoVentas.Datos\Dolar_PuntoVenta.Datos.csproj">
       <Project>{1de7f2c7-d4b0-4135-afdd-a96f2daf1ea2}</Project>
-      <Name>Dolar_PuntoVentas.Datos</Name>
+      <Name>Dolar_PuntoVenta.Datos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

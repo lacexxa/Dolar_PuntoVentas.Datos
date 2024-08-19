@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.35026.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolar_PuntoVentas.Datos", "Dolar_PuntoVentas.Datos\Dolar_PuntoVentas.Datos.csproj", "{1DE7F2C7-D4B0-4135-AFDD-A96F2DAF1EA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolar_PuntoVenta.Datos", "Dolar_PuntoVentas.Datos\Dolar_PuntoVenta.Datos.csproj", "{1DE7F2C7-D4B0-4135-AFDD-A96F2DAF1EA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolar_PuntoVenta.Negocio", "Dolar_PuntoVenta.Negocio\Dolar_PuntoVenta.Negocio.csproj", "{0DB621B3-A564-4CB7-890D-D2905C4F2F1C}"
 EndProject
