@@ -19,7 +19,7 @@ namespace Dolar_PuntoVentas.Datos
         {
             this.Base = "BD_PUNTOVENTA";
             this.Servidor = "DESKTOP-5BMJNVJ\\SQLEXPRESS";
-            this.Usuario = "Leonel";
+            this.Usuario = "soporte";
             this.Clave = "qwe";
         }
 
