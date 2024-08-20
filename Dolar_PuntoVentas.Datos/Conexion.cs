@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace Dolar_PuntoVentas.Datos
+namespace Dolar_PuntoVenta.Datos
 {
     public class Conexion
     {

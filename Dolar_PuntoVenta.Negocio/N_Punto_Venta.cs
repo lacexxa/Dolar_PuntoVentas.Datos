@@ -6,12 +6,31 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Dolar_PuntoVenta.Entidades;
-using Dolar_PuntoVentas.Datos;
+using Dolar_PuntoVenta.Datos;
 
 
 namespace Dolar_PuntoVenta.Negocio
 {
-    class N_Punto_Venta
+    public class N_Punto_Venta
     {
+      
+
+        public static DataTable Listado_pv(string cTexto)
+        {
+            D_Punto_Venta Datos = new D_Punto_Venta();
+            return Datos.Listado_pv(cTexto);
+        }
+
+        public static string Guardar_pv(int nOpcion, E_Punto_Venta oPropiedad)
+        {
+            D_Punto_Venta Datos = new D_Punto_Venta();
+            return Datos.Guardar_pv(nOpcion,oPropiedad);
+        }
+        public static string Eliminar_pv(int Ncodigo)
+        {
+            D_Punto_Venta Datos = new D_Punto_Venta();
+            return Datos.Eliminar_pv(Ncodigo);
+        }
+
     }
 }

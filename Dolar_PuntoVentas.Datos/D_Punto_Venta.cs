@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using Dolar_PuntoVenta.Entidades;
 
-namespace Dolar_PuntoVentas.Datos
+namespace Dolar_PuntoVenta.Datos
 {
     public class D_Punto_Venta
     {
@@ -36,6 +36,11 @@ namespace Dolar_PuntoVentas.Datos
             {
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
+        }
+
+        public string Guardar_pv(int nOpcion, object oPropiedad)
+        {
+            throw new NotImplementedException();
         }
 
         public string Guardar_pv(int nOpcion, E_Punto_Venta oPropiedad)
