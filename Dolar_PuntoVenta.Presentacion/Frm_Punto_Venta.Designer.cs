@@ -56,18 +56,19 @@
             // 
             // Tbc_principal
             // 
-            this.Tbc_principal.Controls.Add(this.tabPage1);
             this.Tbc_principal.Controls.Add(this.tabPage2);
+            this.Tbc_principal.Controls.Add(this.tabPage1);
+            this.Tbc_principal.Dock = System.Windows.Forms.DockStyle.Top;
             this.Tbc_principal.ItemSize = new System.Drawing.Size(100, 30);
-            this.Tbc_principal.Location = new System.Drawing.Point(12, 12);
+            this.Tbc_principal.Location = new System.Drawing.Point(0, 0);
             this.Tbc_principal.Name = "Tbc_principal";
             this.Tbc_principal.SelectedIndex = 0;
-            this.Tbc_principal.Size = new System.Drawing.Size(789, 355);
+            this.Tbc_principal.Size = new System.Drawing.Size(969, 355);
             this.Tbc_principal.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.tabPage1.Controls.Add(this.btn_cancelar);
             this.tabPage1.Controls.Add(this.btn_guardar);
             this.tabPage1.Controls.Add(this.btn_retornar);
@@ -76,7 +77,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(781, 317);
+            this.tabPage1.Size = new System.Drawing.Size(961, 317);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Mantenimiento";
             // 
@@ -85,7 +86,7 @@
             this.btn_cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_cancelar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_cancelar.ForeColor = System.Drawing.Color.White;
-            this.btn_cancelar.Location = new System.Drawing.Point(131, 73);
+            this.btn_cancelar.Location = new System.Drawing.Point(126, 60);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 6;
@@ -97,7 +98,7 @@
             this.btn_guardar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_guardar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_guardar.ForeColor = System.Drawing.Color.White;
-            this.btn_guardar.Location = new System.Drawing.Point(212, 73);
+            this.btn_guardar.Location = new System.Drawing.Point(207, 60);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(75, 23);
             this.btn_guardar.TabIndex = 5;
@@ -109,7 +110,7 @@
             this.btn_retornar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_retornar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btn_retornar.ForeColor = System.Drawing.Color.White;
-            this.btn_retornar.Location = new System.Drawing.Point(298, 73);
+            this.btn_retornar.Location = new System.Drawing.Point(293, 60);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(75, 23);
             this.btn_retornar.TabIndex = 4;
@@ -118,7 +119,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(105, 37);
+            this.textBox1.Location = new System.Drawing.Point(100, 24);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(312, 20);
             this.textBox1.TabIndex = 1;
@@ -128,7 +129,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(18, 37);
+            this.label2.Location = new System.Drawing.Point(13, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 0;
@@ -136,7 +137,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.tabPage2.BackColor = System.Drawing.Color.PapayaWhip;
             this.tabPage2.Controls.Add(this.btn_buscar);
             this.tabPage2.Controls.Add(this.txt_Buscar);
             this.tabPage2.Controls.Add(this.label1);
@@ -144,7 +145,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(781, 317);
+            this.tabPage2.Size = new System.Drawing.Size(961, 317);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Consultas";
             // 
@@ -169,7 +170,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(235)))), ((int)(((byte)(211)))));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(18, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
@@ -178,7 +180,7 @@
             // 
             // Dgv_Listado
             // 
-            this.Dgv_Listado.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Dgv_Listado.BackgroundColor = System.Drawing.Color.White;
             this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Listado.Location = new System.Drawing.Point(21, 61);
             this.Dgv_Listado.Name = "Dgv_Listado";
