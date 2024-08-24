@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Punto_Venta));
             this.Tbc_principal = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btn_buscar = new System.Windows.Forms.Button();
+            this.txt_Buscar = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Dgv_Listado = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_guardar = new System.Windows.Forms.Button();
             this.btn_retornar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btn_buscar = new System.Windows.Forms.Button();
-            this.txt_Buscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Dgv_Listado = new System.Windows.Forms.DataGridView();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btn_Actualizar = new System.Windows.Forms.Button();
@@ -49,9 +49,9 @@
             this.btn_Reporte = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
             this.Tbc_principal.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Tbc_principal
@@ -65,6 +65,58 @@
             this.Tbc_principal.SelectedIndex = 0;
             this.Tbc_principal.Size = new System.Drawing.Size(969, 355);
             this.Tbc_principal.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.tabPage2.Controls.Add(this.btn_buscar);
+            this.tabPage2.Controls.Add(this.txt_Buscar);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.Dgv_Listado);
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(961, 317);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Consultas";
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
+            this.btn_buscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(235)))), ((int)(((byte)(211)))));
+            this.btn_buscar.Location = new System.Drawing.Point(283, 28);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
+            this.btn_buscar.TabIndex = 3;
+            this.btn_buscar.Text = "Buscar";
+            this.btn_buscar.UseVisualStyleBackColor = false;
+            // 
+            // txt_Buscar
+            // 
+            this.txt_Buscar.Location = new System.Drawing.Point(73, 28);
+            this.txt_Buscar.Name = "txt_Buscar";
+            this.txt_Buscar.Size = new System.Drawing.Size(204, 20);
+            this.txt_Buscar.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(18, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Buscar";
+            // 
+            // Dgv_Listado
+            // 
+            this.Dgv_Listado.BackgroundColor = System.Drawing.Color.White;
+            this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Listado.Location = new System.Drawing.Point(21, 61);
+            this.Dgv_Listado.Name = "Dgv_Listado";
+            this.Dgv_Listado.Size = new System.Drawing.Size(580, 237);
+            this.Dgv_Listado.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -134,58 +186,6 @@
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Punto de Venta";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.PapayaWhip;
-            this.tabPage2.Controls.Add(this.btn_buscar);
-            this.tabPage2.Controls.Add(this.txt_Buscar);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.Dgv_Listado);
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(961, 317);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Consultas";
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(145)))), ((int)(((byte)(134)))));
-            this.btn_buscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(235)))), ((int)(((byte)(211)))));
-            this.btn_buscar.Location = new System.Drawing.Point(283, 28);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(75, 23);
-            this.btn_buscar.TabIndex = 3;
-            this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = false;
-            // 
-            // txt_Buscar
-            // 
-            this.txt_Buscar.Location = new System.Drawing.Point(73, 28);
-            this.txt_Buscar.Name = "txt_Buscar";
-            this.txt_Buscar.Size = new System.Drawing.Size(204, 20);
-            this.txt_Buscar.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(18, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Buscar";
-            // 
-            // Dgv_Listado
-            // 
-            this.Dgv_Listado.BackgroundColor = System.Drawing.Color.White;
-            this.Dgv_Listado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgv_Listado.Location = new System.Drawing.Point(21, 61);
-            this.Dgv_Listado.Name = "Dgv_Listado";
-            this.Dgv_Listado.Size = new System.Drawing.Size(580, 237);
-            this.Dgv_Listado.TabIndex = 0;
             // 
             // btn_Nuevo
             // 
@@ -294,15 +294,17 @@
             this.Controls.Add(this.btn_Actualizar);
             this.Controls.Add(this.btn_Nuevo);
             this.Controls.Add(this.Tbc_principal);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Frm_Punto_Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Punto_Venta";
+            this.Text = "Punto de Venta";
             this.Tbc_principal.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
 
         }
