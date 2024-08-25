@@ -48,6 +48,7 @@
             this.btn_Eliminar = new System.Windows.Forms.Button();
             this.btn_Reporte = new System.Windows.Forms.Button();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.lbl_totalregistros = new System.Windows.Forms.Label();
             this.Tbc_principal.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Listado)).BeginInit();
@@ -69,6 +70,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.PapayaWhip;
+            this.tabPage2.Controls.Add(this.lbl_totalregistros);
             this.tabPage2.Controls.Add(this.btn_buscar);
             this.tabPage2.Controls.Add(this.txt_Buscar);
             this.tabPage2.Controls.Add(this.label1);
@@ -282,6 +284,15 @@
             this.btn_Salir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Salir.UseVisualStyleBackColor = false;
             // 
+            // lbl_totalregistros
+            // 
+            this.lbl_totalregistros.AutoSize = true;
+            this.lbl_totalregistros.Location = new System.Drawing.Point(625, 285);
+            this.lbl_totalregistros.Name = "lbl_totalregistros";
+            this.lbl_totalregistros.Size = new System.Drawing.Size(88, 13);
+            this.lbl_totalregistros.TabIndex = 4;
+            this.lbl_totalregistros.Text = "Total registros : 0";
+            // 
             // Frm_Punto_Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -299,6 +310,7 @@
             this.Name = "Frm_Punto_Venta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Punto de Venta";
+            this.Load += new System.EventHandler(this.Frm_Punto_Venta_Load);
             this.Tbc_principal.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -329,5 +341,6 @@
         private System.Windows.Forms.Button btn_Reporte;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Label lbl_totalregistros;
     }
 }
