@@ -102,6 +102,7 @@
             this.btn_buscar.TabIndex = 3;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // txt_Buscar
             // 
@@ -145,6 +146,7 @@
             this.Dgv_Listado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Dgv_Listado.Size = new System.Drawing.Size(580, 237);
             this.Dgv_Listado.TabIndex = 0;
+            this.Dgv_Listado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Listado_CellDoubleClick);
             // 
             // tabPage1
             // 
@@ -187,6 +189,7 @@
             this.btn_guardar.Text = "Guardar";
             this.btn_guardar.UseVisualStyleBackColor = false;
             this.btn_guardar.Visible = false;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // btn_retornar
             // 
@@ -265,6 +268,7 @@
             this.btn_Actualizar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Actualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Actualizar.UseVisualStyleBackColor = false;
+            this.btn_Actualizar.Click += new System.EventHandler(this.btn_Actualizar_Click);
             // 
             // btn_Eliminar
             // 
@@ -282,6 +286,7 @@
             this.btn_Eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // btn_Reporte
             // 

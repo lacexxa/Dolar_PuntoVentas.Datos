@@ -54,6 +54,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\Dataset_DatosMaestros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dataset_DatosMaestros.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Frm_Punto_Venta.resx">
       <DependentUpon>Frm_Punto_Venta.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +80,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reportes\Dataset_DatosMaestros.xsc">
+      <DependentUpon>Dataset_DatosMaestros.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Dataset_DatosMaestros.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dataset_DatosMaestros.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Dataset_DatosMaestros.xss">
+      <DependentUpon>Dataset_DatosMaestros.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
